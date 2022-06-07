@@ -12,6 +12,8 @@
     "mongo": "cd dc && docker-compose up && cd ..",
     "test": "mocha ./src-client/tests/.setup.js ./src-client/tests/**/*spec.jsx",
     "build": "webpack",
+    "build:watch": "webpack --watch",
+    "build:white": "webpack --watch",
     "watch": "webpack --watch",
     "build-docker": "docker images thecodeite/fatt && echo 'What version?' && read v && docker build -t \"thecodeite/fatt:$v\" ."
   },
